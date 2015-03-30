@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Security Tips</title>
+    <style type="text/css">
+    body {
+        margin: 1px;
+        font-family: sans-serif;
+    }
+    p, h1, h2 {
+        margin: 16px;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    h2 {
+        margin-top: 24px;
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+    a {
+        text-decoration: none;
+    }
+    blockquote {
+        background-color: #cccccc;
+        padding: 1px;
+        margin: 0px 16px;
+    }
+    blockquote blockquote {
+        padding: 0px;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Help</h1>
+    <p>First, select a dictionary with the slider. Larger dictionaries will make more secure passphrases, but some of the words might be obscure and harder to remember.</p>
+    <p>Next, select the number of words in the phrase. Similarly, using more words will make a more secure passphrase, but it will be harder to remember.</p>
+    <p>You'll see the strength of those settings below, measured in bits. Each extra bit means it takes twice as many attempts to guess your phrase. The strength you need varies depending on how secure you want things to be, and who you ask.</p>
+    <p>Then click Generate on the toolbar to generate a passphrase with your chosen settings. That's all there is to it; simply start using your passphrase! If you need another, press the Generate button again.</p>
+    <p>If you really dislike the generated passphrase, you can press the Generate button to generate another. However, don't keep doing this repeatedly as this reduces the randomness of the final phrase and lowers its security.</p>
+    <h2>FAQ</h2>
+    <p><strong>How do I know this program is trustworthy?</strong></p>
+    <p>The short answer is, you don't know for definite; there are some decisions that you have to make yourself. However, it is open source, so you're welcome to look through the source code if that helps.</p>
+    <p>For the truly paranoid, I'd recommend <a href="http://diceware.com/">Diceware</a>. It uses physical dice and a paper word list so you don't have to trust anyone.</p>
+    <p><strong>Are the passphrases truly random?</strong></p>
+    <p>No, but they use a cryptographically secure generator, so it's about as close as you can get.</p>
+    <p><strong>What about dictionary attacks?</strong></p>
+    <p>Some people claim that passphrases are vulnerable to dictionary attacks. It's true that a dictionary attack is the fastest way to crack a passphrase - but all of the calculations for entropy / strength already take dictionary attacks into account. That's the whole point!</p>
+    <p><strong>How large are the dictionaries?</strong></p>
+    <p>The tiny dictionary is about 730 words (depending on your language), and each larger dictionary approximately doubles that, up to about 80,000 for the extreme dictionary.</p>
+
+    <h1>Security Tips</h1>
+    <p>Follow all the usual advice for passwords in general:</p>
+    <p>Never tell anyone. If you write it down, make sure it's kept safe. Never store it on your computer except in a dedicated password manager. Don't use the same one for several sites.</p>
+    <h2>Randomness</h2>
+    <p>The most important thing to know about passphrases in particular is they only work when they are random.</p>
+    <p>Human beings are really bad at being random. If you try to think of a passphrase yourself, it may seem random to you, but the chances are that it could be easily guessed. That's why we use computers (or <a href="http://diceware.com/">dice</a>) to do it for us.</p>
+    <p>Along similar lines, if you dislike a particular passphrase or find it difficult to remember, I'd recommend generating another one. But don't keep doing that repeatedly as it reduces the randomness.</p>
+    <h2>Memorising</h2>
+    <p>If you can't remember your password instantly, write it down on a piece of paper and <em>keep it in a safe place</em>. Every few hours, try to remember it, then check. When you're confident you've got it, burn or shred the paper.</p>
+    <p>If you're using strong encryption, <em>don't forget your passphrase</em>, whatever happens. Your encrypted data will be completely lost.</p>
+    <h2>Password Managers</h2>
+    <p>Passphrases work well combined with password managers. A good strong passphrase can be used as the master password for the password manager, and then the password manager can be used to generate gibberish passwords for each account.</p>
+
+    <h1>About Passphrase Generator</h1>
+    <p>Developed by Steven Eddies</p>
+    <p>Version 1</p>
+    <p>&copy; Steven Eddies, 2014-15</p>
+    <p>This is a Windows/.NET version of an <a href="https://play.google.com/store/apps/details?id=uk.me.eddies.apps.passphrase">Android app</a>, also written by Steven Eddies.</p>
+    <h2>Disclaimer</h2>
+    <p>Although I've done my best to follow best security practices, I can't guarantee that this program is fully secure. I am <em>not</em> responsible for any security breaches that may occur as a result of problems with this program.</p>
+    <h2>Acknowledgements</h2>
+    <p>The application logo was inspired by a <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a> image by <a href="http://game-icons.net/delapouite/dice/perspective-dice-six-faces-random.html">Delapouite</a>.</p>
+
+    <p>The word lists used to generate the passphrases were adapted from <a href="http://wordlist.sourceforge.net/">SCOWL</a> by Kevin Atkinson:</p>
+    <blockquote>
+        <p>The collective work is Copyright 2000-2011 by Kevin Atkinson as well as any of the copyrights mentioned below:</p>
+        <p>Copyright 2000-2011 by Kevin Atkinson</p>
+        <p>Permission to use, copy, modify, distribute and sell these word lists, the associated scripts, the output created from the scripts, and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appears in all copies and that both that copyright notice and this permission notice appear in supporting documentation. Kevin Atkinson makes no representations about the suitability of this array for any purpose. It is provided "as is" without express or implied warranty.</p>
+        <p>Alan Beale &lt;biljir@pobox.com&gt; also deserves special credit as he has, in addition to providing the 12Dicts package and being a major contributor to the ENABLE word list, given me an incredible amount of feedback and created a number of special lists (those found in the Supplement) in order to help improve the overall quality of SCOWL.</p>
+        <p>The 10 level includes the 1000 most common English words (according to the Moby (TM) Words II [MWords] package), a subset of the 1000 most common words on the Internet (again, according to Moby Words II), and frequently class 16 from Brian Kelk's "UK English Wordlist with Frequency Classification".</p>
+        <p>The MWords package was explicitly placed in the public domain:</p>
+        <blockquote>
+            <p>The Moby lexicon project is complete and has been place into the public domain. Use, sell, rework, excerpt and use in any way on any platform.</p>
+            <p>Placing this material on internal or public servers is also encouraged. The compiler is not aware of any export restrictions so freely distribute world-wide.</p>
+            <p>You can verify the public domain status by contacting</p>
+            <p>
+                Grady Ward<br />
+                3449 Martha Ct.<br />
+                Arcata, CA  95521-4884<br />
+                grady@netcom.com<br />
+                grady@northcoast.com
+            </p>
+        </blockquote>
+        <p>The "UK English Wordlist With Frequency Classification" is also in the Public Domain:</p>
+        <blockquote>
+            <p>
+                Date: Sat, 08 Jul 2000 20:27:21 +0100<br />
+                From: Brian Kelk &lt;Brian.Kelk@cl.cam.ac.uk&gt;
+            </p>
+            <blockquote><p>I was wondering what the copyright status of your "UK English Wordlist With Frequency Classification" word list as it seems to be lacking any copyright notice.</p></blockquote>
+            <p>There were many many sources in total, but any text marked "copyright" was avoided. Locally-written documentation was one source. An earlier version of the list resided in a filespace called PUBLIC on the University mainframe, because it was considered public domain.</p>
+            <p>Date: Tue, 11 Jul 2000 19:31:34 +0100</p>
+            <blockquote><p>So are you saying your word list is also in the public domain?</p></blockquote>
+            <p>That is the intention.</p>
+        </blockquote>
+        <p>The 20 level includes frequency classes 7-15 from Brian's word list.</p>
+        <p>The 35 level includes frequency classes 2-6 and words appearing in at least 11 of 12 dictionaries as indicated in the 12Dicts package.  All words from the 12Dicts package have had likely inflections added via my inflection database.</p>
+        <p>The 12Dicts package and Supplement is in the Public Domain.</p>
+        <p>The WordNet database, which was used in the creation of the Inflections database, is under the following copyright:</p>
+        <blockquote>
+            <p>This software and database is being provided to you, the LICENSEE, by Princeton University under the following license.  By obtaining, using and/or copying this software and database, you agree that you have read, understood, and will comply with these terms and conditions.:</p>
+            <p>Permission to use, copy, modify and distribute this software and database and its documentation for any purpose and without fee or royalty is hereby granted, provided that you agree to comply with the following copyright notice and statements, including the disclaimer, and that the same appear on ALL copies of the software, database and documentation, including modifications that you make for internal use or for distribution.</p>
+            <p>WordNet 1.6 Copyright 1997 by Princeton University.  All rights reserved.</p>
+            <p>THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND PRINCETON UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT- ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.</p>
+            <p>The name of Princeton University or Princeton may not be used in advertising or publicity pertaining to distribution of the software and/or database.  Title to copyright in this software, database and any associated documentation shall at all times remain with Princeton University and LICENSEE agrees to preserve same.</p>
+        </blockquote>
+        <p>The 40 level includes words from Alan's 3esl list found in version 4.0 of his 12dicts package.  Like his other stuff the 3esl list is also in the public domain.</p>
+        <p>The 50 level includes Brian's frequency class 1, words words appearing in at least 5 of 12 of the dictionaries as indicated in the 12Dicts package, and uppercase words in at least 4 of the previous 12 dictionaries.  A decent number of proper names is also included: The top 1000 male, female, and Last names from the 1990 Census report; a list of names sent to me by Alan Beale; and a few names that I added myself.  Finally a small list of abbreviations not commonly found in other word lists is included.</p>
+        <p>The name files form the Census report is a government document which I don't think can be copyrighted.</p>
+        <p>The file special-jargon.50 uses common.lst and word.lst from the "Unofficial Jargon File Word Lists" which is derived from "The Jargon File". All of which is in the Public Domain. This file also contains a few extra UNIX terms which are found in the file "unix-terms" in the special/ directory.</p>
+        <p>The 55 level includes words from Alan's 2of4brif list found in version 4.0 of his 12dicts package.  Like his other stuff the 2of4brif is also in the public domain.</p>
+        <p>The 60 level includes all words appearing in at least 2 of the 12 dictionaries as indicated by the 12Dicts package.</p>
+        <p>The 70 level includes Brian's frequency class 0 and the 74,550 common dictionary words from the MWords package.  The common dictionary words, like those from the 12Dicts package, have had all likely inflections added.  The 70 level also included the 5desk list from version 4.0 of the 12Dics package which is the public domain.</p>
+        <p>The 80 level includes the ENABLE word list, all the lists in the ENABLE supplement package (except for ABLE), the "UK Advanced Cryptics Dictionary" (UKACD), the list of signature words in from YAWL package, and the 10,196 places list from the MWords package.</p>
+        <p>The ENABLE package, mainted by M\Cooper &lt;thegrendel@theriver.com&gt;, is in the Public Domain:</p>
+        <blockquote>
+            <p>The ENABLE master word list, WORD.LST, is herewith formally released into the Public Domain. Anyone is free to use it or distribute it in any manner they see fit. No fee or registration is required for its use nor are "contributions" solicited (if you feel you absolutely must contribute something for your own peace of mind, the authors of the ENABLE list ask that you make a donation on their behalf to your favorite charity). This word list is our gift to the Scrabble community, as an alternate to "official" word lists. Game designers may feel free to incorporate the WORD.LST into their games. Please mention the source and credit us as originators of the list. Note that if you, as a game designer, use the WORD.LST in your product, you may still copyright and protect your product, but you may *not* legally copyright or in any way restrict redistribution of the WORD.LST portion of your product. This *may* under law restrict your rights to restrict your users' rights, but that is only fair.</p>
+        </blockquote>
+        <p>UKACD, by J Ross Beresford &lt;ross@bryson.demon.co.uk&gt;, is under the following copyright:</p>
+        <blockquote>
+            <p>Copyright (c) J Ross Beresford 1993-1999. All Rights Reserved.</p>
+            <p>The following restriction is placed on the use of this publication: if The UK Advanced Cryptics Dictionary is used in a software package or redistributed in any form, the copyright notice must be prominently displayed and the text of this document must be included verbatim.</p>
+            <p>There are no other restrictions: I would like to see the list distributed as widely as possible.</p>
+        </blockquote>
+        <p>The 95 level includes the 354,984 single words, 256,772 compound words, 4,946 female names and the 3,897 male names, and 21,986 names from the MWords package, ABLE.LST from the ENABLE Supplement, and some additional words found in my part-of-speech database that were not found anywhere else.</p>
+        <p>Accent information was taken from UKACD.</p>
+        <p>My VARCON package was used to create the American, British, and Canadian word list.</p>
+        <p>Since the original word lists used used in the VARCON package came from the Ispell distribution they are under the Ispell copyright:</p>
+        <blockquote>
+            <p>
+                Copyright 1993, Geoff Kuenning, Granada Hills, CA<br />
+                All rights reserved.
+            </p>
+            <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+            <p>1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+            <p>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+            <p>3. All modifications to the source code must be clearly marked as such.  Binary redistributions based on modified source code must be clearly marked as modified versions in the documentation and/or other materials provided with the distribution.</p>
+            <p>(clause 4 removed with permission from Geoff Kuenning)</p>
+            <p>5. The name of Geoff Kuenning may not be used to endorse or promote products derived from this software without specific prior written permission.</p>
+            <p>THIS SOFTWARE IS PROVIDED BY GEOFF KUENNING AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL GEOFF KUENNING OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+        </blockquote>
+        <p>The variant word lists were created from a list of variants found in the 12dicts supplement package as well as a list of variants I created myself.</p>
+        <p>The Readmes for the various packages used can be found in the appropriate directory under the r/ directory.</p>
+    </blockquote>
+
+</body>
+</html>
