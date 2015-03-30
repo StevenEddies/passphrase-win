@@ -1,0 +1,34 @@
+Passphrase Generator
+
+
+A simple program that generates random passphrases as a secure alternative to other types of password. Inspired by the likes of Diceware and XKCD's famous “correct horse battery staple” comic, the idea is that phrases are easier to remember than complicated strings of characters. Humans tend to choose easily guessed phrases, but by generating them randomly, this tendency is removed.
+
+Created by Steven Eddies. Copyright 2015 Steven Eddies, licensed under the Apache License 2.0 (see LICENSE).
+
+This is a Windows port of an Android app: see the original at https://play.google.com/store/apps/details?id=uk.me.eddies.apps.passphrase
+
+
+Installing
+
+Get the most recent version from dist/, unzip all files and run setup.exe. This installs Passphrase Generator for the current Windows user only.
+
+
+Requirements
+
+If installing the compiled application, the .NET Framework version 4.5 is the only requirement. To open the source code solution, you will need Visual Studio 2013 as well as the SharpZipLib library.
+
+
+Contact
+
+http://www.eddies.me.uk/ or steven@eddies.me.uk
+
+
+Contents
+
+Dictionaries/ - Pre-generated compressed word lists.
+
+dist/ - Downloadable installers for the application.
+
+Icon/ - GIMP original for the application icon.
+
+PassphraseGenerator/ - Visual Studio project for the application source code.
