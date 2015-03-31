@@ -10,7 +10,7 @@ This is a Windows port of an Android app: see the original at https://play.googl
 
 Installing
 
-Get the most recent version from dist/, unzip all files and run setup.exe. This installs Passphrase Generator for the current Windows user only.
+Download from http://apps.eddies.me.uk/download/passphrase-win/setup.exe - this installs Passphrase Generator for the current Windows user only.
 
 
 Requirements
@@ -26,8 +26,6 @@ http://www.eddies.me.uk/ or steven@eddies.me.uk
 Contents
 
 Dictionaries/ - Pre-generated compressed word lists.
-
-dist/ - Downloadable installers for the application.
 
 Icon/ - GIMP original for the application icon.
 
